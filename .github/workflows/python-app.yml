@@ -25,6 +25,7 @@ jobs:
         working-directory: ./example-app
 
     steps:
+      - uses: actions/checkout@v2
       - name: Install Poetry Action
         uses: snok/install-poetry@v1.3.3
       - name: Set up Python 3.10
