@@ -12,9 +12,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: ${{ .github/workflows }}
-  cancel-in-progress: true
-
+    group: some-group-name
 jobs:
 
   job1:
