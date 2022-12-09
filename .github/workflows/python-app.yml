@@ -53,6 +53,7 @@ jobs:
         working-directory: ./example-app
     
     steps:
+      - uses: actions/checkout@v2
       - name: Lint with flake8
         run: |
           # stop the build if there are Python syntax errors or undefined names
