@@ -54,8 +54,9 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
-      - name: Flake8-Annotate-Action
-        uses: gijswobben/flake8-action@v0.9.0
+      - name: Run flake8 on your PR - with annotations!
+        uses: tayfun/flake8-your-pr@1.0.1
+
       - name: Cache build venv
         id: cached-poetry-dependencies
         uses: actions/cache@v3
